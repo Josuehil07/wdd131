@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominican Republic | Caribbean Paradise</title>
+  <meta name="description" content="Discover the beauty of Dominican Republic">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- JavaScript -->
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <picture>
+      <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+      <source srcset="images/hero-medium.webp" media="(max-width: 1200px)">
+      <img src="images/hero-large.webp" alt="Punta Cana Beach with palm trees" class="hero-image">
+    </picture>
+    <div class="hero-content">
+      <h1>Dominican Republic</h1>
+      <p class="subtitle">Where Caribbean Dreams Come Alive</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="weather-card">
+      <div class="weather-header">
+        <img src="images/weather-icon.svg" alt="Weather icon" class="weather-icon">
+        <h2>Weather</h2>
+      </div>
+      <div class="weather-data">
+        <p><span class="label">Temperature:</span> <span id="temp">82</span>°F</p>
+        <p><span class="label">Wind Speed:</span> <span id="wind-speed">8</span> mph</p>
+        <p><span class="label">Wind Chill:</span> <span id="wind-chill">N/A</span></p>
+      </div>
+    </section>
+
+    <section class="info-card">
+      <h2>Island Paradise</h2>
+      <p>Famous for its year-round sunshine, the Dominican Republic offers:</p>
+      <ul class="highlights">
+        <li>🏖️ 1,000+ miles of pristine beaches</li>
+        <li>🎵 Birthplace of merengue music</li>
+        <li>🏛️ UNESCO-listed colonial architecture</li>
+      </ul>
+      <div class="gallery">
+        <img src="images/hero-small.webp" alt="Santo Domingo architecture" loading="lazy">
+        <img src="images/hero-medium.webp" alt="Dominican coastline" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©<span id="year"></span> Dominican Republic Travel Guide | Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
